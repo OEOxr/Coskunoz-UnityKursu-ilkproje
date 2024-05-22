@@ -11,6 +11,8 @@ public class ObjectPlacement : MonoBehaviour
     public string SuccessNote;
 
 
+    //Bu dosya ders için oluşturulmuş örnek C dosyasıdır.
+
     public void OnTriggerEnter(Collider other)
     {
         if (targetobj == null || TextArea == null)
@@ -18,7 +20,7 @@ public class ObjectPlacement : MonoBehaviour
         else
             if(other.gameObject ==  targetobj)
         {
-            Debug.Log("Object is Placed");
+            //Debug.Log("Object is Placed");
             TextArea.text = "Tebrikler; "+ SuccessNote +" Yerinde.";
         }
     }
@@ -30,7 +32,7 @@ public class ObjectPlacement : MonoBehaviour
         else
             if (other.gameObject == targetobj)
         {
-            Debug.Log("Object is removed");
+            //Debug.Log("Object is removed");
             TextArea.text = SuccessNote + " Yerinde Değil!";
         }
     }
